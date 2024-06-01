@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\style-quem-somos.css" />
+    <title>Quem Somos - Nostalgia System</title>
+    <style>
+        /* Seus estilos existentes aqui */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: block;
+        }
+
+        .contact-list {
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .contact-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 20px;
+        }
+
+        .contact-list li strong {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .contact-list a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        .botao-menu {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .carrossel {
+            overflow: hidden;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .carrossel .container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carrossel .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carrossel .container img:first-child {
+            margin-right: 10px;
+        }
+
+        .carrossel .container img:last-child {
+            margin-left: 10px;
+        }
+
+        .carrossel .seta {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .carrossel .seta.esquerda {
+            left: 0;
+        }
+
+        .carrossel .seta.direita {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\index.html">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\logo Nostalgia.jpeg" alt="Logo" height="137">
+    </a>
+</div>
+
+<h1>Quem Somos</h1>
+
+<p>A Nostalgia System nasceu da paixão por reviver momentos inesquecíveis. Somos mais do que uma simples loja; somos um portal que transporta você de volta ao passado, trazendo à tona as lembranças mais preciosas da sua vida.</p>
+
+<p>Seja aquele equipamento de som clássico que embalava suas noites, o brinquedo que era seu companheiro inseparável ou até mesmo os móveis e objetos antigos que contam histórias de tempos mais simples e felizes, nós estamos aqui para reacender essas memórias.</p>
+
+<p>Nossa missão é oferecer uma experiência única, onde cada item é uma janela para o passado, permitindo que você se reconecte com as emoções e sensações que marcaram sua jornada. Deixe a Nostalgia System ser o seu refúgio, um lugar onde você pode relaxar, recordar e celebrar os momentos que moldaram quem você é hoje.</p>
+
+<div class="carrossel">
+    <div class="seta esquerda">&#10094;</div>
+    <div class="container">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\imagem1.jpg" alt="">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\imagem2.jpg" alt="">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\imagem3.jpg" alt="">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\imagem4.jpg" alt="">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\imagem5.jpg" alt="">
+    
+    </div>
+    <div class="seta direita">&#10095;</div>
+</div>
+
+<footer>
+    NostalgiaSystem &copy; Todos os direitos reservados.
+</footer>
+
+<script src="script-Pagina-Quem-somos.js"></script>
+
+</body>
+</html>

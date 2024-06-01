@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalgia System</title>
+
+    <style>
+
+        
+
+body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 60px; /* Espaço para o rodapé */
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            
+        }
+
+        .banner {
+        width: 100%; /* Define a largura como 100% */
+        height: 570px; /* Define uma altura específica, por exemplo, 200px */
+        display: block;
+        object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    }
+
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-toggle:checked + .menu {
+            display: flex;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        .menu a:hover {
+            background-color: #777;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .buy-button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao-menu {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: block;
+        }
+
+
+        .carousel-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px; /* Adapte conforme necessário */
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilos para botões de navegação */
+        .carousel-prev, .carousel-next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        .carousel-prev {
+            left: 10px;
+        }
+
+        .carousel-next {
+            right: 10px;
+        }
+
+
+    </style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\favicon-16x16.png">
+<link rel="manifest" href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\site.webmanifest">
+
+</head>
+<body>
+  
+<div class="header">
+    <a href="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\index.html"> <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\logo Nostalgia.jpeg" alt="Logo" height="137"> </a>
+    <!-- <button class="botao-menu">OBJETOS</button>
+    <button class="botao-menu">MÓVEIS</button>
+    <button class="botao-menu">ARTE</button> -->
+    <a href="Quem-somos.html"> <button class="botao-menu">Quem Somos</button> </a>
+    <a href="Pagina-de-contato.html"> <button class="botao-menu">CONTATO</button> </a>
+
+        
+
+</div>
+
+<img class="banner" src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\imagem 1.jpg"alt="Imagem Grande">
+
+
+
+<span style="font-size: 32px; margin: 21px 40%;"
+  >NOSSO ACERVO</span
+>
+
+
+<div class="products">
+     
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Fita VHS 1.jpg" alt="Fitas De Video VHS" height="150">
+        <h3>Fitas Dvc Sony Premium</h3>
+        <p>5 Und Fitas Dvc Sony Premium Sony</p>    
+        <a href="https://produto.mercadolivre.com.br/MLB-4606222312-fitas-dvc-sony-premium-fitas-vhs-60-minutos-_JM"> <button class="buy-button">Comprar</button> </a>
+       
+
+
+    </div>
+
+
+     
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\CD mileniun toquinho.jpg" alt="CD de musicas" height="150">
+        <h3>Cd Milennium Toquinho & Vinícius</h3>
+        <p>Cd Milennium Antigo </p>
+        <a href="https://produto.mercadolivre.com.br/MLB-3614597397-cd-milennium-toquinho-vinicius-_JM"> <button class="buy-button">Comprar</button> </a>
+       
+    </div>
+
+
+    
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\potenciometro lbt.jpg" alt="botoes e Potenciometro " height="150">
+        <h3>Kit Botoes E Potenciometro Radio Lbt555av Sony</h3>
+        <p>Compativel Com Lbt555av Sony</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-4611853286-kit-botoes-e-potenciometro-radio-lbt555av-sony-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+     
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Faqueiro Hercures.jpg" alt="Faqueiro" height="150">
+        <h3>Faqueiro Hercures Antigo</h3>
+        <p>Faqueiro Hercures Antigo com 92 peças</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991286-faqueiro-hercures-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Fitas VHS JVC.jpg" alt="4 fitas VHS" height="150">
+        <h3>Fitas VHS JVC SX120</h3>
+        <p>Fitas VHS 120min. 
+        <a href="https://produto.mercadolivre.com.br/MLB-3680300361-4-fitas-vhs-jvc-sx120-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+    
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\lbt555.jpg" alt="Radio Sony" height="150">
+        <h3>LBT555AV COMPLETO</h3>
+        <p>Radio LBT555AV Completo com caixa original</Ri:a></p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991286-lbt-555av-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Radio Apollo 100 .jpg" alt="comunicador " height="150">
+        <h3>Comunicador Apollo100</h3>
+        <p>Comunicador Apollo100 Completo na caixa original.</p>
+      
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991286-walkie-talkie-antigo-brinquedo-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Maquina Singer.jpg" alt="Maquina de Custura" height="150">
+        <h3>Maquina De Custura Singer</h3>
+        <p>Maquina De Custura Singer antiga</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991996-Maquina-Singer-Rara-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+       
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Comoda Antiga 5 Gavetas .jpg" alt="Comoda" height="150">
+        <h3>Comoda Antiga Madeira</h3>
+        <p>Comoda Antiga 5 Gavetas</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991956-Comoda-Antiga-5-Gavetas-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\Cristaleira antiga .jpg" alt="Produto 3" height="150">
+        <h3>Cristaleira Antiga Madeira</h3>
+        <p>Cristaleira antiga com pes de Madeira</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991956-Cristaleira-antiga-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\maquina de escrever olivetti 82.jpg" alt="maquina escrever" height="150">
+        <h3>Maquina de escrever azul olivetti</h3>
+        <p>Maquina de escrever olivetti 82</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991886-maquina-de-escrever-olivetti-82-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+    
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\maquina de escrever remington .jpg" alt="maquina" height="150">
+        <h3>Maquina de escrever verde remington</h3>
+        <p>Maquina de escrever antiga remington </p>
+        <a href="https://produto.mercadolivre.com.br/MLB-46119991886-maquina-de-escrever-remington-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\antiga Philips caixa de madeira .jpg" alt="movel tv" height="150">
+        <h3>Televisor Philips Movel Madeira</h3>
+        <p>Televisor Philips chassis: KL1</p>
+        <a href="https://lista.mercadolivre.com.br/tv-philips-kl1#D[A:tv%20philips%20kl1]" > <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\maquina de escrever canon .jpg" alt="Manquina de escrever" height="150">
+        <h3>Manquina de escrever tripestar 3 </h3>
+        <p>Manquina de escrever canon </p>
+        <a href="https://produto.mercadolivre.com.br/MLB-3666615861-maquina-de-escrever-camon-typestar-3-na-caixa-original-_JM" > <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\carrinho stratus.jpg" alt="carrinho" height="150">
+        <h3>Carrinho Stratus Antigo</h3>
+        <p>Carrinho Stratus Antigo anos 80 com controle</p>
+        <a href="https://produto.mercadolivre.com.br/MLB-9666615861-carrinho-stratus-_JM" > <button class="buy-button">Comprar</button> </a>
+    </div>
+
+
+    <div class="product">
+        <img src="C:\Users\59-03048\Desktop\Site 4 Semestre (NOSTALGIA SYSTEM)\mini aspirador estrela .jpg" alt="aspirador " height="150">
+        <h3>brinquedo apsirador de po anos 80 </h3>
+        <p> apsirador de po Estrela anos 80 </p>
+        
+        <a href="https://produto.mercadolivre.com.br/MLB-3680473367-aspirador-de-po-brinquedo-estrela-antigo-com-caixa-original-_JM"> <button class="buy-button">Comprar</button> </a>
+    </div>
+    
+    
+    <!--   
+
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 17</h3>
+        <p>Descrição do produto 17.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 18</h3>
+        <p>Descrição do produto 18.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 19</h3>
+        <p>Descrição do produto 19.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+    
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 20</h3>
+        <p>Descrição do produto 21.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 22</h3>
+        <p>Descrição do produto 22.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 23</h3>
+        <p>Descrição do produto 23.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 24</h3>
+        <p>Descrição do produto 24.</p>
+        <button class="buy-button">Comprar</button>
+    </div>
+
+
+    <div class="product">
+        <img src="caminho/para/imagem3.jpg" alt="Produto 3" height="150">
+        <h3>Produto 25</h3>
+        <p>Descrição do produto 16.</p>
+        <button class="buy-button">Comprar</button>
+
+    </div>
+
+    -->
+
+    <!--  Botao Whats -->
+<a href="https://api.whatsapp.com/send?phone=5511974934506&text=Olá!Gostaria%20de%20Informacoes%20sobre%20antiguidades" id="waurlsite" class="bt-whatsApp" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxMDAlIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cmVjdCBoZWlnaHQ9IjI0IiBpZD0iQXJ0Ym9hcmQxIiBzdHlsZT0iZmlsbDpub25lOyIgd2lkdGg9IjI0IiB4PSIwIiB5PSIwIi8+PGc+PGc+PHBhdGggZD0iTTQuMDE4LDE3LjA0OGMtMC45NiwtMS40ODQgLTEuNTE4LC0zLjI1MyAtMS41MTgsLTUuMTUxYzAsLTUuMjQzIDQuMjU3LC05LjUgOS41LC05LjVjNS4yNDMsMCA5LjUsNC4yNTcgOS41LDkuNWMwLDUuMjQzIC00LjI1Nyw5LjUgLTkuNSw5LjVjLTEuNzc3LDAgLTMuNDQsLTAuNDg5IC00Ljg2MywtMS4zMzlsLTQuNjM3LDEuNTQ1bDEuNTE4LC00LjU1NVoiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+PHBhdGggZD0iTTUuNzk1LDE2LjMwNGMtMC44ODYsLTEuMjQ0IC0xLjQwNywtMi43NjUgLTEuNDA3LC00LjQwN2MwLC00LjIwMSAzLjQxMSwtNy42MTIgNy42MTIsLTcuNjEyYzQuMjAxLDAgNy42MTIsMy40MTEgNy42MTIsNy42MTJjMCw0LjIwMSAtMy40MTEsNy42MTEgLTcuNjEyLDcuNjExYy0xLjU5LDAgLTMuMDY2LC0wLjQ4OCAtNC4yODgsLTEuMzIzbC0yLjg2MiwwLjk1NGwwLjk0NSwtMi44MzVaIiBzdHlsZT0iZmlsbDojMDBhODJkOyIvPjwvZz48cGF0aCBkPSJNOS43MTQsMTMuODczYy0xLjEyNCwtMS4zNzQgLTEuODc0LC0zLjA1NiAtMi4xMDksLTQuODhjLTAuMDYzLC0wLjUwOCAwLjEwNiwtMS4wMTggMC40NjEsLTEuMzg3YzAuMzU1LC0wLjM2OSAwLjg1OCwtMC41NTggMS4zNjgsLTAuNTE1bDAuMDQ5LDAuMDA1YzAsMCAwLjU2MSwwLjE1IDAuODY4LDAuMjMzYzAuMTIyLDAuMDMzIDAuMjE5LDAuMTI0IDAuMjYsMC4yNDNjMC4xMzgsMC40MSAwLjQ2NCwxLjM3MyAwLjYxOCwxLjgyNmMwLjA1LDAuMTQ3IDAuMDA0LDAuMzEgLTAuMTE0LDAuNDFjLTAuMjMzLDAuMTk2IC0wLjYxOCwwLjUyIC0wLjg1OCwwLjcyM2MtMC4xMjksMC4xMDkgLTAuMTcsMC4yOSAtMC4xLDAuNDQzYzAuMjc5LDAuNjA4IDAuNjM1LDEuMTc2IDEuMDU3LDEuNjljMC40MzQsMC41MDIgMC45MzMsMC45NDkgMS40ODUsMS4zMjdjMC4xNCwwLjA5NSAwLjMyNSwwLjA4NSAwLjQ1NCwtMC4wMjRjMC4yNDEsLTAuMjAyIDAuNjI2LC0wLjUyNiAwLjg1OCwtMC43MjJjMC4xMTksLTAuMSAwLjI4NywtMC4xMTcgMC40MjQsLTAuMDQzYzAuNDIsMC4yMjggMS4zMTQsMC43MTIgMS42OTQsMC45MThjMC4xMTEsMC4wNiAwLjE4NSwwLjE3MiAwLjE5NiwwLjI5N2MwLjAyOSwwLjMxNyAwLjA4MywwLjg5NSAwLjA4MywwLjg5NWwtMC4wMDQsMC4wNDljLTAuMDQ0LDAuNTEgLTAuMzE1LDAuOTc0IC0wLjczOSwxLjI2MWMtMC40MjQsMC4yODggLTAuOTU1LDAuMzY4IC0xLjQ0NSwwLjIyYy0xLjc3MiwtMC41NDUgLTMuMzEzLC0xLjU4MSAtNC40NzksLTIuOTM3bC0wLjAyNywtMC4wMzJaIiBzdHlsZT0iZmlsbDojZjNmM2YzOyIvPjwvZz48L3N2Zz4=" alt="" width="60px">
+    </a>
+    <span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
+    <div id="msg1" style="right: 90px; visibility: hidden; background: #fff;color: #000;position: fixed;width: 100px;bottom: 55px;font-size: 12px;line-height: 13px;padding: 3px; border-radius: 10px; border:1px solid #e2e2e2; box-shadow: 2px 2px 3px #999;z-index:100; ">Fale com a NostalgiaSystem!</div>
+    <script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
+   
+    
+
+    <footer>
+         NostalgiaSystem &copy; Todos os direitos reservados.
+    </footer>
+    
+    </body>
+    </html>
+
+
